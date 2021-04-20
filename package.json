@@ -4,7 +4,11 @@
   "description": "Versuch 1",
   "main": "index.js",
   "scripts": {
-    "test": "https://github.com/DamianJacek/dev-environment.git"
+    "dev": "gulp dev",
+    "test": "jest --watch=true",
+    "test:ci": "jest --coverage=true",
+    "e2e": "jest --config jest-e2e.js",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
